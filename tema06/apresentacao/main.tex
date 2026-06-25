@@ -313,9 +313,7 @@ A linha vermelha representa o corte adotado (frequência > 2). Observa-se que a 
 
   \vspace{4pt}
   \small
-  Configurações mínimas avaliadas: \textbf{Baseline 1} pré-treinado, \textbf{Baseline 2} treinado só no DDsmall, \textbf{Proposta 1} com EntityRuler e \textbf{Proposta 2} com DDsmall + pseudo-anotado.\\[4pt]
-  Entre as variantes da Proposta 2, a configuração com \textbf{20k exemplos pseudo-anotados} foi a melhor; por isso ela entrou na comparação principal.\\[4pt]
-  A comparação central foi: \textbf{treinar com o pseudo-anotado melhora o desempenho em relação ao treino apenas com o conjunto anotado manualmente?}
+  Configurações avaliadas: \textbf{Baseline 1} pré-treinado (pt\_core\_news\_lg), \textbf{Baseline 2} treinado só no DDsmall, \textbf{Proposta 1} com EntityRuler e \textbf{Proposta 2} com DDsmall + pseudo-anotado.\\[4pt]
 \end{frame}
 
 \begin{frame}{Avaliação em nível de entidade, todas as configurações}
@@ -459,7 +457,7 @@ A linha vermelha representa o corte adotado (frequência > 2). Observa-se que a 
 
       \vspace{8pt}
       \small
-      Entre as configurações mínimas, o melhor resultado ficou com o \textbf{Baseline 2}. A pseudo-anotação não melhorou a generalização no teste, e a queda foi especialmente forte em \textbf{Pessoa}, enquanto \textbf{Organização} caiu menos.
+      Entre as configurações, o melhor resultado ficou com o \textbf{Baseline 2}. A pseudo-anotação não melhorou a generalização no teste, e a queda foi especialmente forte em \textbf{Pessoa}, enquanto \textbf{Organização} caiu menos.
     \end{column}
   \end{columns}
 \end{frame}

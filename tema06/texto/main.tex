@@ -56,7 +56,7 @@ Além desse corpus anotado, existe um corpus muito maior e sem anotações
 manuais de REN, denominado DDlarge, com 184.493 relatos criminais. Na
 dissertação, a estratégia principal para aproveitar o DDlarge foi a
 pseudo-rotulagem com modelos de linguagem de grande porte, em particular o
-GLiNER \citep{zaratiana2023gliner}, que avalia o contexto ao redor de cada
+GLiNER, que avalia o contexto ao redor de cada
 candidato a entidade antes de atribuir um rótulo. Essa abordagem produz
 resultados expressivos, mas exige recursos computacionais consideráveis e
 tempo de treinamento elevado.
@@ -518,7 +518,7 @@ superfície registradas, que também mais que triplicaram, de 68 para 219.
 
 Essa tensão é consequência direta da limitação estrutural da projeção
 lexical: ela decide marcar ou não uma ocorrência apenas com base na
-correspondência exata de string, sem avaliar o contexto ao redor. Um léxico
+correspondência de string, sem avaliar o contexto ao redor. Um léxico
 mais permissivo aumentaria a cobertura, mas também aumentaria o risco de
 marcar termos ambíguos fora de contexto, como ``mão'' ou ``preto'' usados
 como substantivo comum em vez de apelido, conforme discutido na Etapa 2. Um
@@ -528,10 +528,7 @@ categorias em que a Proposta 2 melhorou sobre o Baseline 2, erro de classe e
 entidades do léxico não reconhecidas, mostram que ver mais contextos ajuda o
 modelo a desambiguar quando a entidade chega a ser pseudo-anotada, mas esse
 ganho é pequeno demais para compensar o aumento nas duas categorias de falso
-negativo. O contraste com a estratégia da dissertação de Gustavo Melo é
-revelador: o modelo GLiNER, que avalia o contexto ao redor de cada span
-candidato antes de decidir o rótulo, não depende desse compromisso entre
-precisão e cobertura.
+negativo.
 
 Os resultados também mostram que ampliar o volume de pseudo-exemplos não traz
 ganho adicional: a variante com o corpus completo, usando 133.841 relatos,
